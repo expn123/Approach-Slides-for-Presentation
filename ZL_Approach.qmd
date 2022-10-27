@@ -1,0 +1,137 @@
+---
+title: "Approach"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    theme: default
+    navigation-mode: vertical
+    preview-links: auto
+    logo: SPH_horizontal_M_maroon.png
+    css: styles.css
+    footer: PubH 8831
+editor: visual
+author: Zongbo Li
+---
+
+# Overview
+
+In this analysis, I will investigate optimal naloxone distributional strategies
+
+The following tools will be used:
+
+-   Cost-effectiveness analysis
+
+-   Microsimulation model
+
+# Model Overview
+
+## Microsimulation
+
+-   Micro: Data (personal information) of individuals in the model
+    -   Age, sex, race...
+    -   Settings of opioid use, overdose history, possession of naloxone
+    -   Costs and QALYs
+-   Simulation:
+    -   Markov-transition model: opioid use behavior
+
+    -   Decision tree: overdose
+
+## Simulated Individuals
+
+![](simulated_population.jpeg)
+
+## Cost-effectiveness analysis
+
+Incremental cost-effectiveness ratio:
+
+$$
+ICER = \frac{\Delta C}{\Delta E}
+$$
+
+![](ce_plane.jpg){fig-align="center"}
+
+## Diagram
+
+![](AnalysisDiagram.png){fig-align="center"}
+
+# Individual-Level Information
+
+## Demographic information
+
+-   Age, sex and race: background mortality
+
+-   Race: access to health services (OEND & MOUD)
+
+-   Sex: opioid use?
+
+## Setting of opioid use
+
+-   Examples:home, friend's residence, a "shooting gallery", street, supervised injection facilities...
+-   Will impact the cascading probabilities of events related to an overdose episode
+
+## History of overdose
+
+Will affect the rate of next overdose as evidence suggested
+
+## Possession of naloxone
+
+-   Dependent on naloxone distribution strategy
+
+-   Will affect the probability of being administered naloxone in decision tree of overdose events
+
+# Opioid Use
+
+![](OpioidUse.png){fig-align="center"}
+
+## More on Opioid Use
+
+For individuals with hisotry of overdose: $$
+r_p'=r_p+\Delta r 
+$$
+
+$$
+r_f'=r_f+\Delta r 
+$$ $$
+r_h'=r_h+\Delta r 
+$$ $$
+r_m'=r_m+\Delta r 
+$$
+
+## More on Opioid Use
+
+-   MOUD: Inequity of access to treatment (Race)
+-   Background Mortality: Life-table method
+
+![](life_table_1.png){fig-align="center"}
+
+# Overdose
+
+![](overdose.png){fig-align="center"}
+
+# Diagram of Analysis
+
+Let's go back to previous a slide
+
+![](time_machine.gif){fig-align="center"}
+
+# Cost-effectiveness analysis
+
+-   ICER 
+    $$
+    ICER = \frac{\Delta C}{\Delta E}
+    $$
+-   Net Monetary Benefit 
+    $$
+    NMB = \epsilon E_i-C_i 
+    $$
+
+## Distributional Cost-effectiveness analysis
+
+![](dcea.webp){fig-align="center" width="500"}
+
+# Any comments?
+
+![](WechatIMG5534.jpeg){fig-align="center"}
+
